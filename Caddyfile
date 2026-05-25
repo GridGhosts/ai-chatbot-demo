@@ -1,0 +1,6 @@
+:80 {
+    root * /app
+    file_server
+    header Content-Security-Policy "default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;"
+    try_files {path} /index.html
+}
